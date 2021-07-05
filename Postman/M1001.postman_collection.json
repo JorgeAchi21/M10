@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "523bccfd-8f1f-4022-949e-9d131bdc5190",
+		"name": "M1001",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 Catalog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/catalog",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"catalog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "40 Show + id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/catalog/show/4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"catalog",
+						"show",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "50 Create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/catalog/create",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"catalog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "51 Create (añadir nuevo)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "titulo",
+							"value": "El ingenioso hidalgo Don Quijote",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "Miguel de Cervantes",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "01/01/1605",
+							"type": "text"
+						},
+						{
+							"key": "opinion",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "_token",
+							"value": "ybPAXtiFXb3MdvGFBknY22ZE0saRdlHDQ5w8dJdB",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/catalog/create",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"catalog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "60 Edit + id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/catalog/edit/4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"catalog",
+						"edit",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "61 Edit + id",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "RAVGtqFr4A4GM7xlUDWgcDA52xYZJlmSWdPDClVF",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "titulo",
+							"value": "El ingenioso hidalgo Don Quijote",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "Miguel de Cervantes",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "01/01/1605",
+							"type": "text"
+						},
+						{
+							"key": "opinion",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "_token",
+							"value": "ybPAXtiFXb3MdvGFBknY22ZE0saRdlHDQ5w8dJdB",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.12/M1001/public/index.php/catalog/edit/4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"M1001",
+						"public",
+						"index.php",
+						"catalog",
+						"edit",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
